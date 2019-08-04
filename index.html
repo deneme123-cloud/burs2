@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Title Page-->
+	<title>2019 Burs Başvuru Sayfası</title>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	 crossorigin="anonymous"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+
+	<!-- Icons font CSS-->
+	<link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+	<link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+	<!-- Font special for pages-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+	<!-- Vendor CSS-->
+	<link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+	<link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+	<!-- Main CSS-->
+	<link href="css/main.css" rel="stylesheet" media="all">
+
+	<style>
+		hr {
+            display: block;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 1px;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        .label--desc {
+            margin-top: 5px;
+        }
+
+        input{
+        	text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+	<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+		<div class="wrapper wrapper--w790">
+			<div class="card card-5">
+				<div class="card-heading">
+					<h2 class="title">2019 Burs Başvuru Formu</h2>
+					<h4 style="color: white; text-decoration: none; font-size: 15px; text-align: center; "> Sadece 15 - 30 Eylül
+						tarihleri arasında başvuru yapılabilir</h4>
+				</div>
+				<div class="card-body">
+					<form method="POST" action="Main.php" name="basvuruformu">
+
+						<h2>Kişisel Bilgiler</h2>
+
+						<div class="form-row p-t-20">
+							<label class="label label--block">Başka herhangi bir kurum veya vakıftan burs almadığımı onaylıyorum.</label>
+							<div class="p-t-15">
+								<label class="radio-container m-r-55">
+									<input type="checkbox" name="bursalmıyorum" data-validation="required" data-validation-error-msg="Bu seçeneği onaymalısınız.">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+
+
+						<div class="form-row p-t-20">
+							<label class="label label--block">Burs yönetmeliğini okudum ve kabul ediyorum.</label>
+							<div class="p-t-15">
+								<label class="radio-container m-r-55">
+									<input type="checkbox" name="yonetmelikkabul" data-validation="required" data-validation-error-msg="Bu seçeneği onaylamalısınız.">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">TC</div>
+							<div class="value">
+								<div class="input-group">
+									<input class="input--style-5" type="number" name="tcno" data-validation="length" data-validation-length="11"
+									 data-validation-error-msg="Lütfen TC kimlik numaranızı giriniz.">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Fotoğraf</div>
+							<div class="value">
+								<div class="input-group">
+									<label for="file-select">Fotoğraf Yükle:</label>
+									<input type="file" name="fotograf" id="file-select">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row m-b-55">
+							<div class="name">İsim - Soyisim</div>
+							<div class="value">
+								<div class="row row-space">
+									<div class="col-2">
+										<div class="input-group-desc">
+											<input class="input--style-5" type="text" name="isim" data-validation="length" data-validation-length="1-50"
+											 data-validation-error-msg="Lütfen isminizi giriniz.">
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="input-group-desc">
+											<input class="input--style-5" type="text" name="soyisim" data-validation="length" data-validation-length="1-60"
+											 data-validation-error-msg="Lütfen soyisminizi giriniz.">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Doğum yeri</div>
+							<div class="value">
+								<div class="input-group">
+									<div class="rs-select2 js-select-simple select--no-search">
+										<select name="subject">
+											<option value="1">Adana</option>
+											<option value="2">Adıyaman</option>
+											<option value="3">Afyonkarahisar</option>
+											<option value="4">Ağrı</option>
+											<option value="5">Amasya</option>
+											<option value="6">Ankara</option>
+											<option value="7">Antalya</option>
+											<option value="8">Artvin</option>
+											<option value="9">Aydın</option>
+											<option value="10">Balıkesir</option>
+											<option value="11">Bilecik</option>
+											<option value="12">Bingöl</option>
+											<option value="13">Bitlis</option>
+											<option value="14">Bolu</option>
+											<option value="15">Burdur</option>
+											<option value="16">Bursa</option>
+											<option value="17">Çanakkale</option>
+											<option value="18">Çankırı</option>
+											<option value="19">Çorum</option>
+											<option value="20">Denizli</option>
+											<option value="21">Diyarbakır</option>
+											<option value="22">Edirne</option>
+											<option value="23">Elazığ</option>
+											<option value="24">Erzincan</option>
+											<option value="25">Erzurum</option>
+											<option value="26">Eskişehir</option>
+											<option value="27">Gaziantep</option>
+											<option value="28">Giresun</option>
+											<option value="29">Gümüşhane</option>
+											<option value="30">Hakkâri</option>
+											<option value="31">Hatay</option>
+											<option value="32">Isparta</option>
+											<option value="33">Mersin</option>
+											<option value="34">İstanbul</option>
+											<option value="35">İzmir</option>
+											<option value="36">Kars</option>
+											<option value="37">Kastamonu</option>
+											<option value="38">Kayseri</option>
+											<option value="39">Kırklareli</option>
+											<option value="40">Kırşehir</option>
+											<option value="41">Kocaeli</option>
+											<option value="42">Konya</option>
+											<option value="43">Kütahya</option>
+											<option value="44">Malatya</option>
+											<option value="45">Manisa</option>
+											<option value="46">Kahramanmaraş</option>
+											<option value="47">Mardin</option>
+											<option value="48">Muğla</option>
+											<option value="49">Muş</option>
+											<option value="50">Nevşehir</option>
+											<option value="51">Niğde</option>
+											<option value="52">Ordu</option>
+											<option value="53">Rize</option>
+											<option value="54">Sakarya</option>
+											<option value="55">Samsun</option>
+											<option value="56">Siirt</option>
+											<option value="57">Sinop</option>
+											<option value="58">Sivas</option>
+											<option value="59">Tekirdağ</option>
+											<option value="60">Tokat</option>
+											<option value="61">Trabzon</option>
+											<option value="62">Tunceli</option>
+											<option value="63">Şanlıurfa</option>
+											<option value="64">Uşak</option>
+											<option value="65">Van</option>
+											<option value="66">Yozgat</option>
+											<option value="67">Zonguldak</option>
+											<option value="68">Aksaray</option>
+											<option value="69">Bayburt</option>
+											<option value="70">Karaman</option>
+											<option value="71">Kırıkkale</option>
+											<option value="72">Batman</option>
+											<option value="73">Şırnak</option>
+											<option value="74">Bartın</option>
+											<option value="75">Ardahan</option>
+											<option value="76">Iğdır</option>
+											<option value="77">Yalova</option>
+											<option value="78">Karabük</option>
+											<option value="79">Kilis</option>
+											<option value="80">Osmaniye</option>
+											<option value="81">Düzce</option>
+										</select>
+										<div class="select-dropdown"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Doğum Tarihi</div>
+							<div class="value">
+								<div class="input-group">
+									<input class="input--style-5" type="date" name="dogumtarihi" data-validation="required"
+									 data-validation-error-msg="Lütfen doğum tarihinizi giriniz.">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Nüfusa Kayıtlı Olduğu Yer</div>
+							<div class="value">
+								<div class="input-group">
+									<div class="rs-select2 js-select-simple select--no-search">
+										<select name="nkoy" data-suggestions="frfrf">
+											<option value="1">Adana</option>
+											<option value="2">Adıyaman</option>
+											<option value="3">Afyonkarahisar</option>
+											<option value="4">Ağrı</option>
+											<option value="5">Amasya</option>
+											<option value="6">Ankara</option>
+											<option value="7">Antalya</option>
+											<option value="8">Artvin</option>
+											<option value="9">Aydın</option>
+											<option value="10">Balıkesir</option>
+											<option value="11">Bilecik</option>
+											<option value="12">Bingöl</option>
+											<option value="13">Bitlis</option>
+											<option value="14">Bolu</option>
+											<option value="15">Burdur</option>
+											<option value="16">Bursa</option>
+											<option value="17">Çanakkale</option>
+											<option value="18">Çankırı</option>
+											<option value="19">Çorum</option>
+											<option value="20">Denizli</option>
+											<option value="21">Diyarbakır</option>
+											<option value="22">Edirne</option>
+											<option value="23">Elazığ</option>
+											<option value="24">Erzincan</option>
+											<option value="25">Erzurum</option>
+											<option value="26">Eskişehir</option>
+											<option value="27">Gaziantep</option>
+											<option value="28">Giresun</option>
+											<option value="29">Gümüşhane</option>
+											<option value="30">Hakkâri</option>
+											<option value="31">Hatay</option>
+											<option value="32">Isparta</option>
+											<option value="33">Mersin</option>
+											<option value="34">İstanbul</option>
+											<option value="35">İzmir</option>
+											<option value="36">Kars</option>
+											<option value="37">Kastamonu</option>
+											<option value="38">Kayseri</option>
+											<option value="39">Kırklareli</option>
+											<option value="40">Kırşehir</option>
+											<option value="41">Kocaeli</option>
+											<option value="42">Konya</option>
+											<option value="43">Kütahya</option>
+											<option value="44">Malatya</option>
+											<option value="45">Manisa</option>
+											<option value="46">Kahramanmaraş</option>
+											<option value="47">Mardin</option>
+											<option value="48">Muğla</option>
+											<option value="49">Muş</option>
+											<option value="50">Nevşehir</option>
+											<option value="51">Niğde</option>
+											<option value="52">Ordu</option>
+											<option value="53">Rize</option>
+											<option value="54">Sakarya</option>
+											<option value="55">Samsun</option>
+											<option value="56">Siirt</option>
+											<option value="57">Sinop</option>
+											<option value="58">Sivas</option>
+											<option value="59">Tekirdağ</option>
+											<option value="60">Tokat</option>
+											<option value="61">Trabzon</option>
+											<option value="62">Tunceli</option>
+											<option value="63">Şanlıurfa</option>
+											<option value="64">Uşak</option>
+											<option value="65">Van</option>
+											<option value="66">Yozgat</option>
+											<option value="67">Zonguldak</option>
+											<option value="68">Aksaray</option>
+											<option value="69">Bayburt</option>
+											<option value="70">Karaman</option>
+											<option value="71">Kırıkkale</option>
+											<option value="72">Batman</option>
+											<option value="73">Şırnak</option>
+											<option value="74">Bartın</option>
+											<option value="75">Ardahan</option>
+											<option value="76">Iğdır</option>
+											<option value="77">Yalova</option>
+											<option value="78">Karabük</option>
+											<option value="79">Kilis</option>
+											<option value="80">Osmaniye</option>
+											<option value="81">Düzce</option>
+										</select>
+										<div class="select-dropdown"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="form-row">
+							<div class="name">E-Posta adresi</div>
+							<div class="value">
+								<div class="input-group">
+									<input class="input--style-5" type="email" name="eposta" data-validation="email" data-validation-error-msg="Lütfen e-posta adresinizi giriniz."
+									 style="text-transform: none
+										">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row m-b-55">
+							<div class="name">Telefon Numarası</div>
+							<div class="value">
+								<div class="col-12">
+									<div class="input-group-desc">
+										<input class="input--style-5" type="number" name="telefonnumarasi" data-validation="required"
+										 data-validation-error-msg="Lütfen telefon numaranızı giriniz.">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row m-b-55">
+							<div class="name">IBAN Numarası</div>
+							<div class="value">
+								<div class="col-12">
+									<div class="input-group-desc">
+										<input class="input--style-5" type="text" name="ibanno" data-validation="required" data-validation-error-msg="Lütfen IBAN numaranızı giriniz.">
+										<label class="label--desc" style="color:red">IBAN numarası sadece Vakıfbank hesabına ait olabilir.</label>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<hr>
+						<h2>İkamet Bilgileri</h2>
+
+						<div class="form-row">
+							<div class="name">Başvuru Yılı</div>
+							<div class="value">
+								<div class="input-group">
+									<input class="input--style-5" type="number" name="basvuruyili" disabled>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Öğrencinin İkamet Şekli</div>
+							<div class="value">
+								<div class="input-group">
+									<div class="rs-select2 js-select-simple select--no-search">
+										<select name="subject">
+											<option value="1">Devlet Yurdu</option>
+											<option value="2">Özel Yurt</option>
+											<option value="3">Kira Ev </option>
+											<option value="4">Kendi Mülkü (veya kirasız ev/yurt) </option>
+										</select>
+										<div class="select-dropdown"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Öğrencinin İkamet Ücreti</div>
+							<div class="value">
+								<div class="input-group">
+									<input class="input--style-5" type="number" name="ogrikametucreti" data-validation="required"
+									 data-validation-error-msg="Lütfen ikamet ücretinizi giriniz.">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Öğrencinin İkamet Adresi</div>
+							<div class="value">
+								<div class="input-group">
+									<input name="ogrenciadresi" class="input--style-5" type="text" data-validation="required"
+									 data-validation-error-msg="Lütfen adresinizi giriniz.">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Ailenin İkamet Şekli</div>
+							<div class="value">
+								<div class="input-group">
+									<div class="rs-select2 js-select-simple select--no-search">
+										<select name="subject">
+											<option value="1">Kira</option>
+											<option value="2">Lojman</option>
+											<option value="3">Kendi Mülkü</option>
+											<option value="4">Akraba Evi</option>
+										</select>
+										<div class="select-dropdown"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Ailenin İkamet Ücreti</div>
+							<div class="value">
+								<div class="input-group">
+									<input class="input--style-5" type="number" name="aileikametucreti" data-validation="required"
+									 data-validation-error-msg="Lütfen ikamet ücretini giriniz.">
+									<label class="label--desc" style="color:red">Ev kredili ise aylık kredi miktarı burada belirtilmeli</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Ailenin İkamet Adresi</div>
+							<div class="value">
+								<div class="input-group">
+									<input name="aileadresi" class="input--style-5" type="text" data-validation="required"
+									 data-validation-error-msg="Lütfen ikamet adresini giriniz.">
+								</div>
+							</div>
+						</div>
+
+						<hr>
+						<h2>Okul Bilgileri</h2>
+
+						<div class="form-row">
+							<div class="name">Üniversite Adı</div>
+							<div class="value">
+								<div class="input-group">
+									<div class="rs-select2 js-select-simple select--no-search">
+										<select name="subject" name="uniadi">
+											<option value="1">ADANA BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ</option>
+											<option value="2">ÇUKUROVA ÜNİVERSİTESİ</option>
+											<option value="3">ADIYAMAN ÜNİVERSİTESİ</option>
+											<option value="4">AFYON KOCATEPE ÜNİVERSİTESİ </option>
+											<option value="5">AFYONKARAHİSAR SAĞLIK BİLİMLERİ ÜNİVERSİTESİ </option>
+											<option value="6">AĞRI İBRAHİM ÇEÇEN ÜNİVERSİTESİ</option>
+											<option value="7">AKSARAY ÜNİVERSİTESİ</option>
+											<option value="8">AMASYA ÜNİVERSİTESİ </option>
+											<option value="9">ANKARA ÜNİVERSİTESİ </option>
+											<option value="10">ANKARA GÜZEL SANATLAR ÜNİVERSİTESİ</option>
+											<option value="11">ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ</option>
+											<option value="12">ANKARA SOSYAL BİLİMLER ÜNİVERSİTESİ </option>
+											<option value="13">GAZİ ÜNİVERSİTESİ </option>
+											<option value="14">HACETTEPE ÜNİVERSİTESİ </option>
+											<option value="15">ORTA DOĞU TEKNİK ÜNİVERSİTESİ </option>
+											<option value="16">ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ</option>
+											<option value="17">ANKA TEKNOLOJİ ÜNİVERSİTESİ</option>
+											<option value="18">ANKARA MEDİPOL ÜNİVERSİTESİ</option>
+											<option value="19">ATILIM ÜNİVERSİTESİ </option>
+											<option value="20">BAŞKENT ÜNİVERSİTESİ </option>
+											<option value="21">ÇANKAYA ÜNİVERSİTESİ</option>
+											<option value="22">İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ </option>
+											<option value="23">LOKMAN HEKİM ÜNİVERSİTESİ </option>
+											<option value="24">OSTİM TEKNİK ÜNİVERSİTESİ </option>
+											<option value="25">TED ÜNİVERSİTESİ </option>
+											<option value="26">TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ </option>
+											<option value="27">UFUK ÜNİVERSİTESİ </option>
+											<option value="28">TÜRK HAVA KURUMU ÜNİVERSİTESİ </option>
+											<option value="29">YÜKSEK İHTİSAS ÜNİVERSİTESİ </option>
+											<option value="30">POLİS AMİRLERİ EĞİTİM MERKEZİ </option>
+											<option value="31">AKDENİZ ÜNİVERSİTESİ </option>
+											<option value="32">ALANYA ALAADDİN KEYKUBAT ÜNİVERSİTESİ </option>
+											<option value="33">ALANYA HAMDULLAH EMİN PAŞA ÜNİVERSİTESİ </option>
+											<option value="34">ANTALYA AKEV ÜNİVERSİTESİ </option>
+											<option value="35">ANTALYA BİLİM ÜNİVERSİTESİ</option>
+											<option value="36">ARDAHAN ÜNİVERSİTESİ </option>
+											<option value="37">ARTVİN ÇORUH ÜNİVERSİTESİ </option>
+											<option value="38">AYDIN ADNAN MENDERES ÜNİVERSİTESİ </option>
+											<option value="39">BALIKESİR ÜNİVERSİTESİ </option>
+											<option value="40">BANDIRMA ONYEDİ EYLÜL ÜNİVERSİTESİ </option>
+											<option value="41">BARTIN ÜNİVERSİTESİ </option>
+											<option value="42">BATMAN ÜNİVERSİTESİ </option>
+											<option value="43">BAYBURT ÜNİVERSİTESİ </option>
+											<option value="44">BİLECİK ŞEYH EDEBALİ ÜNİVERSİTESİ</option>
+											<option value="45">BİNGÖL ÜNİVERSİTESİ </option>
+											<option value="46">BİTLİS EREN ÜNİVERSİTESİ </option>
+											<option value="47">BOLU ABANT İZZET BAYSAL ÜNİVERSİTESİ </option>
+											<option value="48">BURDUR MEHMET AKİF ERSOY ÜNİVERSİTESİ </option>
+											<option value="49">BURSA TEKNİK ÜNİVERSİTESİ </option>
+											<option value="50">BURSA ULUDAĞ ÜNİVERSİTESİ </option>
+											<option value="51">ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ </option>
+											<option value="52">ÇANKIRI KARATEKİN ÜNİVERSİTESİ </option>
+											<option value="53">HİTİT ÜNİVERSİTESİ </option>
+											<option value="54">PAMUKKALE ÜNİVERSİTESİ </option>
+											<option value="55">DİCLE ÜNİVERSİTESİ </option>
+											<option value="56">DÜZCE ÜNİVERSİTESİ </option>
+											<option value="57">TRAKYA ÜNİVERSİTESİ </option>
+											<option value="58">FIRAT ÜNİVERSİTESİ </option>
+											<option value="59">ERZİNCAN BİNALİ YILDIRIM ÜNİVERSİTESİ </option>
+											<option value="60">ATATÜRK ÜNİVERSİTESİ </option>
+											<option value="61">ERZURUM TEKNİK ÜNİVERSİTESİ </option>
+											<option value="62">ANADOLU ÜNİVERSİTESİ </option>
+											<option value="63">ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ </option>
+											<option value="64">ESKİŞEHİR TEKNİK ÜNİVERSİTESİ </option>
+											<option value="65">GAZİANTEP ÜNİVERSİTESİ </option>
+											<option value="66">GAZİANTEP İSLAM BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ </option>
+											<option value="67">HASAN KALYONCU ÜNİVERSİTESİ </option>
+											<option value="68">SANKO ÜNİVERSİTESİ </option>
+											<option value="69">GİRESUN ÜNİVERSİTESİ </option>
+											<option value="70">GÜMÜŞHANE ÜNİVERSİTESİ </option>
+											<option value="71">HAKKARİ ÜNİVERSİTESİ </option>
+											<option value="72">İSKENDERUN TEKNİK ÜNİVERSİTESİ </option>
+											<option value="73">HATAY MUSTAFA KEMAL ÜNİVERSİTESİ </option>
+											<option value="74">IĞDIR ÜNİVERSİTESİ </option>
+											<option value="75">SÜLEYMAN DEMİREL ÜNİVERSİTESİ </option>
+											<option value="76">ISPARTA UYGULAMALI BİLİMLER ÜNİVERSİTESİ </option>
+											<option value="77">BOĞAZİÇİ ÜNİVERSİTESİ </option>
+											<option value="78">GALATASARAY ÜNİVERSİTESİ </option>
+											<option value="79">İSTANBUL MEDENİYET ÜNİVERSİTESİ </option>
+											<option value="80">İSTANBUL TEKNİK ÜNİVERSİTESİ </option>
+											<option value="81">İSTANBUL ÜNİVERSİTESİ </option>
+											<option value="82">İSTANBUL ÜNİVERSİTESİ CERRAHPAŞA </option>
+											<option value="83">MARMARA ÜNİVERSİTESİ </option>
+											<option value="84">MİLLÎ SAVUNMA ÜNİVERSİTESİ(ASKERİ) </option>
+											<option value="85">MİMAR SİNAN GÜZEL SANATLAR ÜNİVERSİTESİ </option>
+											<option value="86">TÜRKİYE ULUSLARARASI İSLAM, BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ </option>
+											<option value="87">TÜRK-ALMAN ÜNİVERSİTESİ </option>
+											<option value="88">SAĞLIK BİLİMLERİ ÜNİVERSİTESİ </option>
+											<option value="89">YILDIZ TEKNİK ÜNİVERSİTESİ </option>
+											<option value="90">ACIBADEM ÜNİVERSİTESİ </option>
+											<option value="91">BAHÇEŞEHİR ÜNİVERSİTESİ </option>
+											<option value="92">BEYKENT ÜNİVERSİTESİ </option>
+											<option value="93">BEZMİALEM VAKIF ÜNİVERSİTESİ </option>
+											<option value="94">BİRUNİ ÜNİVERSİTESİ </option>
+											<option value="95">DOĞUŞ ÜNİVERSİTESİ </option>
+											<option value="96">FATİH SULTAN MEHMET ÜNİVERSİTESİ </option>
+											<option value="97">GEDİK ÜNİVERSİTESİ </option>
+											<option value="98">HALİÇ ÜNİVERSİTESİ </option>
+											<option value="99">IŞIK ÜNİVERSİTESİ </option>
+											<option value="100">İBN HALDUN ÜNİVERSİTESİ </option>
+											<option value="101">İSTANBUL 29 MAYIS ÜNİVERSİTESİ </option>
+											<option value="102">İSTANBUL ALTINBAŞ ÜNİVERSİTESİ </option>
+											<option value="103">İSTANBUL AREL ÜNİVERSİTESİ </option>
+											<option value="104">İSTANBUL ATLAS ÜNİVERSİTESİ </option>
+											<option value="105">İSTANBUL AYDIN ÜNİVERSİTESİ </option>
+											<option value="106">İSTANBUL AYVANSARAY ÜNİVERSİTESİ </option>
+											<option value="107">İSTANBUL BEYKOZ ÜNİVERSİTESİ </option>
+											<option value="108">İSTANBUL BİLGİ ÜNİVERSİTESİ </option>
+											<option value="109">İSTANBUL BİLİM ÜNİVERSİTESİ </option>
+											<option value="110">İSTANBUL TİCARET ÜNİVERSİTESİ </option>
+											<option value="111">İSTANBUL ESENYURT ÜNİVERSİTESİ </option>
+											<option value="112">İSTANBUL GEDİK ÜNİVERSİTESİ </option>
+											<option value="113">İSTANBUL GELİŞİM ÜNİVERSİTESİ </option>
+											<option value="114"> İSTANBUL KENT ÜNİVERSİTESİ</option>
+											<option value="115"> İSTANBUL KÜLTÜR ÜNİVERSİTESİ</option>
+											<option value="116">İSTANBUL MEDİPOL ÜNİVERSİTESİ </option>
+											<option value="117">İSTANBUL OKAN ÜNİVERSİTESİ </option>
+											<option value="118">İSTANBUL RUMELİ ÜNİVERSİTESİ </option>
+											<option value="119">İSTANBUL SABAHATTİN ZAİM ÜNİVERSİTESİ </option>
+											<option value="120">İSTANBUL ŞEHİR ÜNİVERSİTESİ </option>
+											<option value="121">İSTİNYE ÜNİVERSİTESİ </option>
+											<option value="122">KADİR HAS ÜNİVERSİTESİ </option>
+											<option value="123">KOÇ ÜNİVERSİTESİ </option>
+											<option value="124">MALTEPE ÜNİVERSİTESİ </option>
+											<option value="125">MEF ÜNİVERSİTESİ </option>
+											<option value="126">NİŞANTAŞI ÜNİVERSİTESİ </option>
+											<option value="127">İSTANBUL OKAN ÜNİVERSİTESİ </option>
+											<option value="128">ÖZYEĞİN ÜNİVERSİTESİ </option>
+											<option value="129">PİRİ REİS ÜNİVERSİTESİ </option>
+											<option value="130">SABANCI ÜNİVERSİTESİ </option>
+											<option value="131">SEMERKAND BİLİM VE MEDENİYET ÜNİVERSİTESİ </option>
+											<option value="132">ÜSKÜDAR ÜNİVERSİTESİ </option>
+											<option value="133">YEDİTEPE ÜNİVERSİTESİ </option>
+											<option value="134">YENİ YÜZYIL ÜNİVERSİTESİ </option>
+											<option value="135">DOKUZ EYLÜL ÜNİVERSİTESİ </option>
+											<option value="136">EGE ÜNİVERSİTESİ </option>
+											<option value="137">İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ </option>
+											<option value="138">İZMİR KÂTİP ÇELEBİ ÜNİVERSİTESİ </option>
+											<option value="139">İZMİR BAKIRÇAY ÜNİVERSİTESİ </option>
+											<option value="140">İZMİR DEMOKRASİ ÜNİVERSİTESİ </option>
+											<option value="141">İZMİR EKONOMİ ÜNİVERSİTESİ </option>
+											<option value="142">İZMİR TINAZTEPE ÜNİVERSİTESİ </option>
+											<option value="143">YAŞAR ÜNİVERSİTESİ </option>
+											<option value="144">KAHRAMANMARAŞ SÜTÇÜ İMAM ÜNİVERSİTESİ </option>
+											<option value="145">KAHRAMANMARAŞ İSTİKLAL ÜNİVERSİTESİ </option>
+											<option value="146">KARABÜK ÜNİVERSİTESİ </option>
+											<option value="147">KARAMANOĞLU MEHMETBEY ÜNİVERSİTESİ </option>
+											<option value="148">KAFKAS ÜNİVERSİTESİ </option>
+											<option value="149">KASTAMONU ÜNİVERSİTESİ </option>
+											<option value="150">ABDULLAH GÜL ÜNİVERSİTESİ </option>
+											<option value="151">ERCİYES ÜNİVERSİTESİ </option>
+											<option value="152">KAYSERİ ÜNİVERSİTESİ </option>
+											<option value="153">NUH NACİ YAZGAN ÜNİVERSİTESİ </option>
+											<option value="154">KIRIKKALE ÜNİVERSİTESİ </option>
+											<option value="155">KIRKLARELİ ÜNİVERSİTESİ </option>
+											<option value="156">KIRŞEHİR AHİ EVRAN ÜNİVERSİTESİ </option>
+											<option value="157">KİLİS 7 ARALIK ÜNİVERSİTESİ </option>
+											<option value="158">GEBZE TEKNİK ÜNİVERSİTESİ </option>
+											<option value="159">KOCAELİ ÜNİVERSİTESİ </option>
+											<option value="160">KONYA TEKNİK ÜNİVERSİTESİ </option>
+											<option value="161">NECMETTİN ERBAKAN ÜNİVERSİTESİ </option>
+											<option value="162">SELÇUK ÜNİVERSİTESİ </option>
+											<option value="163">KONYA GIDA VE TARIM ÜNİVERSİTESİ </option>
+											<option value="164">KTO KARATAY ÜNİVERSİTESİ </option>
+											<option value="165">KÜTAHYA DUMLUPINAR ÜNİVERSİTESİ </option>
+											<option value="166">KÜTAHYA SAĞLIK BİLİMLERİ ÜNİVERSİTESİ </option>
+											<option value="167">İNÖNÜ ÜNİVERSİTESİ </option>
+											<option value="168">MALATYA TURGUT ÖZAL ÜNİVERSİTESİ </option>
+											<option value="169">MANİSA CELAL BAYAR ÜNİVERSİTESİ </option>
+											<option value="170">MARDİN ARTUKLU ÜNİVERSİTESİ </option>
+											<option value="171">ÇAĞ ÜNİVERSİTESİ </option>
+											<option value="172">TARSUS ÜNİVERSİTESİ </option>
+											<option value="173">TOROS ÜNİVERSİTESİ </option>
+											<option value="174">MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ </option>
+											<option value="175">MUŞ ALPARSLAN ÜNİVERSİTESİ </option>
+											<option value="176">NEVŞEHİR HACI BEKTAŞ VELİ ÜNİVERSİTESİ </option>
+											<option value="177">KAPADOKYA ÜNİVERSİTESİ </option>
+											<option value="178">NİĞDE ÖMER HALİSDEMİR ÜNİVERSİTESİ </option>
+											<option value="179">ORDU ÜNİVERSİTESİ </option>
+											<option value="180">OSMANİYE KORKUT ATA ÜNİVERSİTESİ </option>
+											<option value="181"> RECEP TAYYİP ERDOĞAN ÜNİVERSİTESİ</option>
+											<option value="182">SAKARYA ÜNİVERSİTESİ </option>
+											<option value="183">SAKARYA UYGULAMALI BİLİMLER ÜNİVERSİTESİ </option>
+											<option value="184">ONDOKUZ MAYIS ÜNİVERSİTESİ </option>
+											<option value="185">SAMSUN ÜNİVERSİTESİ </option>
+											<option value="186">SİİRT ÜNİVERSİTESİ </option>
+											<option value="187">SİNOP ÜNİVERSİTESİ </option>
+											<option value="188">SİVAS CUMHURİYET ÜNİVERSİTESİ </option>
+											<option value="189">SİVAS BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ </option>
+											<option value="190">HARRAN ÜNİVERSİTESİ </option>
+											<option value="191">ŞIRNAK ÜNİVERSİTESİ </option>
+											<option value="192">TEKİRDAĞ NAMIK KEMAL ÜNİVERSİTESİ</option>
+											<option value="193">TOKAT GAZİOSMANPAŞA ÜNİVERSİTESİ </option>
+											<option value="194">KARADENİZ TEKNİK ÜNİVERSİTESİ </option>
+											<option value="195">TRABZON ÜNİVERSİTESİ </option>
+											<option value="196">AVRASYA ÜNİVERSİTESİ </option>
+											<option value="197">MUNZUR ÜNİVERSİTESİ </option>
+											<option value="198">UŞAK ÜNİVERSİTESİ </option>
+											<option value="199"> VAN YÜZÜNCÜ YIL ÜNİVERSİTESİ</option>
+											<option value="200">YALOVA ÜNİVERSİTESİ </option>
+											<option value="201">YOZGAT BOZOK ÜNİVERSİTESİ </option>
+											<option value="202">ZONGULDAK BÜLENT ECEVİT ÜNİVERSİTESİ </option>
+
+										</select>
+										<div class="select-dropdown"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name"> Fakülte/Yüksekokul Adı</div>
+							<div class="value">
+								<div class="input-group">
+									<input name="fakülteadı" class="input--style-5" type="text" data-validation="required"
+									 data-validation-error-msg="Lütfen Fakülte/Yüksekokul adını giriniz.">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name"> Bölüm Adı</div>
+							<div class="value">
+								<div class="input-group">
+									<input name="bolumu" class="input--style-5" type="text" data-validation="required" data-validation-error-msg="Lüften bölüm adını giriniz.">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Sınıfı</div>
+							<div class="value">
+								<div class="input-group">
+									<div class="rs-select2 js-select-simple select--no-search">
+										<select name="subject">
+											<option value="1">HAZIRLIK</option>
+											<option value="2">1.SINIF</option>
+											<option value="3">2.SINIF</option>
+											<option value="4">3.SINIF</option>
+											<option value="4">4.SINIF</option>
+											<option value="5">5.SINIF</option>
+											<option value="6">6.SINIF</option>
+										</select>
+										<div class="select-dropdown"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<hr>
+						<h2>Anne Bilgileri</h2>
+
+						<div class="form-row m-b-55">
+							<div class="name">Anne İsim-Soyisim</div>
+							<div class="value">
+								<div class="row row-space">
+									<div class="col-2">
+										<div class="input-group-desc">
+											<input class="input--style-5" type="text" name="anneisim" data-validation="length" data-validation-length="1-50"
+											 data-validation-error-msg="Lütfen isim giriniz.">
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="input-group-desc">
+											<input class="input--style-5" type="text" name="annesoyisim" data-validation="length" data-validation-length="1-60"
+											 data-validation-error-msg="Lütfen soyisim giriniz.">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Annenin Sağlık Durumu</div>
+							<div class="value">
+								<div class="input-group">
+									<div class="rs-select2 js-select-simple select--no-search">
+										<select name="subject" id="annesaglik">
+											<option value="1">Sağlıklı</option>
+											<option value="2">Vefat</option>
+											<option value="3">Diğer</option>
+										</select>
+										<div class="select-dropdown"></div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="annebilgileri1">
+
+							<div class="form-row">
+								<div class="name">Annenin Yaşı</div>
+								<div class="value">
+									<div class="input-group">
+										<input class="input--style-5" type="text" name="anneyas" data-validation="length" data-validation-length="2"
+										 data-validation-error-msg="Lütfen yaş giriniz.">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="name"> Annenin Mesleği</div>
+								<div class="value">
+									<div class="input-group">
+										<input name="annemeslek" class="input--style-5" type="text" data-validation="required"
+										 data-validation-error-msg="Lütfen mesleği giriniz.">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="name">Annenin Telefonu </div>
+								<div class="value">
+									<div class="input-group">
+										<input type="phone" class="input--style-5" name="annetelefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+										 data-validation="required" data-validation-error-msg="Lütfen telefon numarası giriniz.">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="name">Annenin Çalışma Durumu</div>
+								<div class="value">
+									<div class="input-group">
+										<div class="rs-select2 js-select-simple select--no-search">
+											<select name="subject" id="annecalismadurumu">
+												<option value="1">İşsiz</option>
+												<option value="2">Çalışıyor</option>
+												<option value="3">Emekli</option>
+											</select>
+											<div class="select-dropdown"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="annemaascontainer"></div>
+
+						<hr>
+						<h2>Babanın Bilgileri</h2>
+
+						<div class="form-row m-b-55">
+							<div class="name">Baba İsim-Soyisim</div>
+							<div class="value">
+								<div class="row row-space">
+									<div class="col-2">
+										<div class="input-group-desc">
+											<input class="input--style-5" type="text" name="babaisim" data-validation="length" data-validation-length="1-50"
+											 data-validation-error-msg="Lütfen isim giriniz.">
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="input-group-desc">
+											<input class="input--style-5" type="text" name="babasoyisim" data-validation="length" data-validation-length="1-60"
+											 data-validation-error-msg="Lütfen soyisim giriniz.">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Babanın Sağlık Durumu</div>
+							<div class="value">
+								<div class="input-group">
+									<div class="rs-select2 js-select-simple select--no-search">
+										<select name="subject" id="babasaglik">
+											<option value="1">Sağlıklı</option>
+											<option value="2">Vefat</option>
+											<option value="3">Diğer</option>
+										</select>
+										<div class="select-dropdown"></div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="bababilgileri1">
+
+							<div class="form-row">
+								<div class="name">Babanın Yaşı</div>
+								<div class="value">
+									<div class="input-group">
+										<input class="input--style-5" type="text" name="babayas" data-validation="length" data-validation-length="2"
+										 data-validation-error-msg="Lütfen yaş giriniz.">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="name"> Babanın Mesleği</div>
+								<div class="value">
+									<div class="input-group">
+										<input name="babameslek" class="input--style-5" type="text" data-validation="required"
+										 data-validation-error-msg="Lütfen mesleği giriniz.">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="name">Babanın Telefonu </div>
+								<div class="value">
+									<div class="input-group">
+										<input type="phone" class="input--style-5" name="babatelefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+										 data-validation="required" data-validation-error-msg="Lütfen telefon numarası giriniz.">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="name">Babanın Çalışma Durumu</div>
+								<div class="value">
+									<div class="input-group">
+										<div class="rs-select2 js-select-simple select--no-search">
+											<select name="subject" id="babacalismadurumu">
+												<option value="1">İşsiz</option>
+												<option value="2">Çalışıyor</option>
+												<option value="3">Emekli</option>
+											</select>
+											<div class="select-dropdown"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="babamaascontainer"></div>
+
+						<hr>
+						<h2>Aile Reisi Bilgileri</h2>
+
+						<div class="form-row">
+							<div class="name">Aile Reisi</div>
+							<div class="value">
+								<div class="input-group">
+									<div class="rs-select2 js-select-simple select--no-search">
+										<select name="subject" id="ailereisi">
+											<option value="1">Anne</option>
+											<option value="2">Baba</option>
+											<option value="3">Diğer</option>
+										</select>
+										<div class="select-dropdown"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="ailereisibilgileri"></div>
+
+						<hr>
+						<h2>Kardeş Bilgileri</h2>
+
+						<div class="form-row">
+							<div class="name">Kardeş Sayısı</div>
+							<div class="value">
+								<div class="input-group">
+									<input type="number" id="kardessayisi" data-validation="number" data-validation-allowing="range[0;20]"
+									 data-validation-error-msg="Lütfen kardeş sayınızı doğru bir şekilde giriniz." class="input--style-5" name="kardessayisi"></input>
+								</div>
+							</div>
+						</div>
+
+						<div id="kardesbilgileri"></div>
+
+						</hr>
+
+
+						<div>
+							<button class="btn btn--radius-2 btn--red" type="submit">Başvur</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Vendor JS-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script src="vendor/datepicker/moment.min.js"></script>
+	<script src="vendor/datepicker/daterangepicker.js"></script>
+
+	<!-- Main JS-->
+	<script src="js/global.js"></script>
+	<script>
+
+		var yilSelector = 'body > div > div > div > div.card-body > form > div:nth-child(15) > div.value > div > input';
+		$(yilSelector).val(new Date().getFullYear());
+		var annesaglik = '#annesaglik';
+		var annebilgileri = '#annebilgileri1';
+		var babasaglik = '#babasaglik';
+		var bababilgileri = '#bababilgileri1';
+
+
+		$(document).on('change', '#annecalismadurumu', function () {
+			console.log($('#annecalismadurumu').val());
+			if ($('#annecalismadurumu').val() == '1') {
+				$('#annemaascontainer').empty();
+			} else if ($('#annecalismadurumu').val() == '2' || $('#annecalismadurumu').val() == '3') {
+				$('#annemaascontainer').empty();
+				$('#annemaascontainer').append(`
+				<div class="form-row">
+					<div class="name"> Annenin Aylık Geliri </div>
+						<div class="value">
+						<div class="input-group">
+							<input type="text" name="annemaas" id="annemaas" class="input--style-5" data-validation="required" data-validation-error-msg="Lütfen aylık gelir giriniz.">
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="name"> Annenin Çalıştığı Yer/ Emekli olduğu kurum </div>
+						<div class="value">
+							<div class="input-group">
+								<input name="anneisyeri" class="input--style-5" type="text" data-validation="required"
+									data-validation-error-msg="Lütfen çalışma yerini giriniz.">
+							</div>
+						</div>
+					</div>
+				`);
+			}
+		});
+
+		$(document).on('change', annesaglik, function () {
+			console.log($(annesaglik).val());
+			if ($(annesaglik).val() == '1') {
+				$(annebilgileri).empty();
+				$(annebilgileri).append(`
+				<div class="form-row">
+								<div class="name">Anne Yaşı</div>
+								<div class="value">
+									<div class="input-group">
+										<input class="input--style-5" type="text" name="anneyas" data-validation="length" data-validation-length="2" data-validation-error-msg="Lütfen yaş giriniz.">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="name"> Annenin Mesleği</div>
+								<div class="value">
+									<div class="input-group">
+										<input name="annemeslek" class="input--style-5" type="text" data-validation="required"
+										 data-validation-error-msg="Lütfen mesleği giriniz.">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="name">Annenin Telefonu </div>
+								<div class="value">
+									<div class="input-group">
+										<input type="phone" class="input--style-5" name="annetelefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+										 data-validation="required" data-validation-error-msg="Lütfen telefon numarası giriniz.">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="name">Anne Çalışma Durumu</div>
+								<div class="value">
+									<div class="input-group">
+										<div class="rs-select2 js-select-simple select--no-search">
+											<select name="subject" id="annecalismadurumu">
+												<option value="1">İşsiz</option>
+												<option value="2">Çalışıyor</option>
+												<option value="3">Emekli</option>
+											</select>
+											<div class="select-dropdown"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+				`);
+			} else if ($(annesaglik).val() == '3') {
+				$(annebilgileri).empty();
+				$('#annemaascontainer').empty();
+				$(annebilgileri).append(`
+				<div class="form-row">
+					<div class="name">Hastalığı </div>
+						<div class="value">
+							<div class="input-group"> 
+								<input type="text" name="annehastalık" id="annehastalık" class="input--style-5" data-validation="required"
+								data-validation-error-msg="Lütfen hastalığı giriniz."> 
+							</div>
+						</div>
+					</div>
+				</div>
+				`);
+			} else if ($(annesaglik).val() == '2') {
+				$(annebilgileri).empty();
+				$('#annemaascontainer').empty();
+			}
+		});
+
+
+
+		$(document).on('change', '#babacalismadurumu', function () {
+			console.log($('#babacalismadurumu').val());
+			if ($('#babacalismadurumu').val() == '1') {
+				$('#babamaascontainer').empty();
+			} else if ($('#babacalismadurumu').val() == '2' || $('#babacalismadurumu').val() == '3') {
+				$('#babamaascontainer').empty();
+				$('#babamaascontainer').append(`
+				<div class="form-row">
+					<div class="name"> Babanın Aylık Geliri </div>
+						<div class="value">
+						<div class="input-group">
+							<input type="text" name="babamaas" id="babamaas" class="input--style-5" data-validation="required" data-validation-error-msg="Lütfen aylık gelir giriniz.">
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="name"> Babanın Çalıştığı Yer/ Emekli olduğu kurum </div>
+						<div class="value">
+							<div class="input-group">
+								<input name="babaisyeri" class="input--style-5" type="text" data-validation="required"
+									data-validation-error-msg="Lütfen çalışma yerini giriniz.">
+							</div>
+						</div>
+					</div>
+				`);
+			}
+		});
+
+		$(document).on('change', babasaglik, function () {
+			if ($(babasaglik).val() == '1') {
+				$(bababilgileri).empty();
+				$(bababilgileri).append(`
+				<div class="form-row">
+								<div class="name">Babanın Yaşı</div>
+								<div class="value">
+									<div class="input-group">
+										<input class="input--style-5" type="text" name="babayas" data-validation="length" data-validation-length="2" data-validation-error-msg="Lütfen yaş giriniz.">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="name"> Babanın Mesleği</div>
+								<div class="value">
+									<div class="input-group">
+										<input name="babameslek" class="input--style-5" type="text" data-validation="required"
+										 data-validation-error-msg="Lütfen mesleği giriniz.">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="name">Babanın Telefonu </div>
+								<div class="value">
+									<div class="input-group">
+										<input type="phone" class="input--style-5" name="babatelefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+										 data-validation="required" data-validation-error-msg="Lütfen telefon numarası giriniz.">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="name">Babanın Çalışma Durumu</div>
+								<div class="value">
+									<div class="input-group">
+										<div class="rs-select2 js-select-simple select--no-search">
+											<select name="subject" id="babacalismadurumu">
+												<option value="1">İşsiz</option>
+												<option value="2">Çalışıyor</option>
+												<option value="3">Emekli</option>
+											</select>
+											<div class="select-dropdown"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+				`);
+			} else if ($(babasaglik).val() == '3') {
+				$(bababilgileri).empty();
+				$('#babamaascontainer').empty();
+				$(bababilgileri).append(`
+				<div class="form-row">
+					<div class="name">Hastalığı </div>
+						<div class="value">
+							<div class="input-group"> 
+								<input type="text" name="babahastalık" id="babahastalık" class="input--style-5" data-validation="required"
+								data-validation-error-msg="Lütfen hastalığı giriniz."> 
+							</div>
+						</div>
+					</div>
+				</div>
+				`);
+			} else if ($(babasaglik).val() == '2') {
+				$(bababilgileri).empty();
+				$('#babamaascontainer').empty();
+			}
+		});
+
+		var ailereisi = '#ailereisi';
+		var ailereisibilgileri = '#ailereisibilgileri';
+		$(ailereisi).on('change', function () {
+			if ($(ailereisi).val() == '1') {
+				$(ailereisibilgileri).empty();
+			} else if ($(ailereisi).val() == '2') {
+				$(ailereisibilgileri).empty();
+			} else if ($(ailereisi).val() == '3') {
+				$(ailereisibilgileri).empty();
+				$(ailereisibilgileri).append(`
+				<div class="form-row m-b-55">
+							<div class="name">Aile Reisi İsim-Soyisim</div>
+							<div class="value">
+								<div class="row row-space">
+									<div class="col-2">
+										<div class="input-group-desc">
+											<input class="input--style-5" type="text" name="reisisim" data-validation="length" data-validation-length="1-50"
+											 data-validation-error-msg="Lütfen isim giriniz.">
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="input-group-desc">
+											<input class="input--style-5" type="text" name="reissoyisim" data-validation="length" data-validation-length="1-60"
+												data-validation-error-msg="Lütfen soyisim giriniz.">
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Aile Reisinin İkamet Adresi</div>
+							<div class="value">
+								<div class="input-group">
+									<input name="ailereisiadresi" class="input--style-5" type="text" style="text-transform: none" data-validation="required" data-validation-error-msg="Lütfen adres giriniz.">
+									<label class="label--desc" style="color:red">Aile Reisinin adresi aile ikamet adresi ile aynı olmak zorundadır.</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Aile Reisinin İş Adresi</div>
+							<div class="value">
+								<div class="input-group">
+									<input name="ailereisisadresi" class="input--style-5" type="text" style="text-transform: none" data-validation="required" data-validation-error-msg="Lütfen adres giriniz.">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="name">Aile Reisinin Telefonu </div>
+							<div class="value">
+								<div class="input-group">
+									<input type="phone" class="input--style-5" name="reistelefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" data-validation="required" data-validation-error-msg="Lütfen telefon numarası giriniz.">
+								</div>
+							</div>
+						</div>
+
+
+						<div class="form-row">
+							<div class="name">Aile Reisinin İş Telefonu </div>
+							<div class="value">
+								<div class="input-group">
+									<input type="phone" class="input--style-5" name="reisistelefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" data-validation="required" data-validation-error-msg="Lütfen telefon numarası giriniz.">
+								</div>
+							</div>
+						</div>
+				`);
+			}
+		})
+
+		var kardesSayisiInput = '#kardessayisi';
+		var selectorToAppend = '#kardesbilgileri';
+		$(kardesSayisiInput).on('input', function () {
+			$(kardesSayisiInput).validate(function (valid, elem) {
+				if (valid) {
+					var kardesSayisi = parseInt(document.querySelector(kardesSayisiInput).value);
+					$(selectorToAppend).empty();
+					for (var i = 0; i < kardesSayisi; i++) {
+						$(selectorToAppend).append(`
+							<div class="form-row m-b-55">
+								<div class="name">${i + 1}.Kardeş İsim-Soyisim</div>
+								<div class="value">
+									<div class="row row-space">
+										<div class="col-2">
+											<div class="input-group-desc">
+												<input class="input--style-5" type="text" name="kardes${i + 1}isim" data-validation="length" data-validation-length="1-50" data-validation-error-msg="Lütfen kardeşinizin isimini giriniz.">
+											</div>
+											</div>
+											<div class="col-2">
+												<div class="input-group-desc">
+													<input class="input--style-5" type="text" name="kardes${i + 1}soyisim" data-validation="length"
+													data-validation-length="1-60" data-validation-error-msg="Lütfen kardeşinizin soyismini giriniz.">
+													</div>
+													</div>
+									</div>
+									</div>
+									</div>
+									
+									<div class="form-row">
+										<div class="name">${i + 1}.Kardeşin Yaşı</div>
+										<div class="value">
+									<div class="input-group">
+										<input class="input--style-5" type="text" name="kardes${i + 1}yas" data-validation="length" data-validation-length="2">
+									</div>
+									</div>
+							</div>
+							
+							<div class="form-row">
+								<div class="name">${i + 1}.Kardeşin Eğitim Durumu</div>
+								<div class="value">
+									<div class="input-group">
+										<div class="rs-select2 js-select-simple select--no-search">
+											<select name="kardes${i + 1}egitim">
+												<option value="1">İlköğretim</option>
+												<option value="2">Lise </option>
+												<option value="3">Ön Lisans</option>
+												<option value="3">Lisans</option>
+												<option value="3">Yüksek Lisans/Doktora</option>
+												<option value="3">Yok</option>
+												</select>
+												<div class="select-dropdown"></div>
+												</div>
+												</div>
+												</div>
+												</div>
+												
+												<div class="form-row">
+													<div class="name">${i + 1}.Kardeşin Aylık Geliri</div>
+													<div class="value">
+														<div class="input-group">
+															<input class="input--style-5" type="text" name="kardes${i + 1}gelir">
+															</div>
+															</div>
+															</div>
+															
+															<hr>
+															`);
+					}
+				} else {
+					$(selectorToAppend).empty();
+				}
+
+			});
+		});
+
+		$.validate();
+	</script>
+
+</body>
+
+</html>
